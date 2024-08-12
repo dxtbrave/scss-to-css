@@ -1,0 +1,39 @@
+#it1vn {
+  display: block !important;
+  margin-bottom: 20px;
+
+  .el-form-item {
+    .el-input--medium {
+      .el-input__inner {
+        height: 48px;
+        line-height: 48px;
+        padding-left: 47px;
+        color: rgba(0, 0, 0, 1);
+        background-color: rgb(249, 249, 249);
+        border-color: rgb(225, 229, 232);
+        &::-webkit-input-placeholder {
+          color: rgb(124, 130, 153);
+        }
+      }
+
+      .el-input__prefix {
+        left: 15px;
+        .el-input__icon {
+          line-height: 48px;
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+      .el-input__suffix{
+        .el-input__icon{
+          line-height: 48px;
+          color: rgba(0, 0, 0, 1);
+        }
+      }
+    }
+
+    .el-form-item__error {
+      font-size: 14px;
+    }
+  }
+
+}
