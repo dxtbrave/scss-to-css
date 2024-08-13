@@ -1,0 +1,27 @@
+#iyb4k {
+  user-select: none;
+  .tw-text{
+    span{
+      transition: all .2s linear;
+    }
+  }
+
+  .el-tooltip{
+    &:before{
+      transition: all .2s linear;
+    }
+  }
+
+  &:hover{
+    .tw-text{
+      span{
+        color: rgba(34,116,255,1) !important;
+      }
+    }
+    .el-tooltip{
+      &:before{
+        color: rgba(34,116,255,1);
+      }
+    }
+  }
+}

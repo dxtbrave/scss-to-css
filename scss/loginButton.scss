@@ -1,0 +1,19 @@
+#ig1wz{
+  .tw-button,&.tw-button{
+    width: 100%;
+    margin-top: 24px;
+  }
+  .el-button{
+    padding: 12px 15px;
+    transition: all .2s linear;
+    border-radius: 8px;
+    width: 100%;
+    color: rgba(24, 31, 56, 1);
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 0 12px 24px 0 rgba(24, 31, 56, 0.05);
+    .el-icon-loading{
+      width: 14px;
+    }
+  }
+}
