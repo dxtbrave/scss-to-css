@@ -16,3 +16,23 @@ html{
   background-size: cover !important;
   background-position: unset !important;
 }
+
+@media (max-width: 2879px) {
+  #i88m6 {
+    width: calc((100% - 80px) / 3) !important;
+    height: 180px !important;
+  }
+}
+@media (max-width: 1799px){
+  #i88m6 {
+    width: calc((100% - 40px) / 2) !important;
+    height: 180px !important;
+  }
+}
+
+@media (min-width: 2880px) {
+  #i88m6 {
+    width: calc((100% - 120px) / 4) !important;
+    height: 180px !important;
+  }
+}
