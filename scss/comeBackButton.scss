@@ -1,0 +1,21 @@
+$bgColor: rgb(0, 112, 255);
+$hoverBgColor: rgb(0,78,235);
+$fontColor: #fff;
+#iz5q{
+  margin-bottom: 20px;
+  .el-button{
+    padding: 12px 15px;
+    transition: all .2s linear;
+    border-radius: 8px;
+    background-color: $bgColor;
+    font-weight: bold;
+    width: 100%;
+    color: $fontColor;
+    font-size: 14px;
+    letter-spacing: 1px;
+    box-shadow: 0 12px 24px 0 rgba(0, 112, 255, 0.24);
+    &:hover{
+      background-color: $hoverBgColor;
+    }
+  }
+}

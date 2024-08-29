@@ -11,6 +11,30 @@ html{
   font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 
+// Element Message样式
+$messageFontColor: rgba(0, 0, 0, 0.88);
+.el-message{
+  min-width: auto;
+  background: #fff;
+  padding: 9px 12px;
+  border-radius: 8px;
+  border: 0;
+  align-items: flex-start;
+  font-family: -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,'Noto Sans',sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol','Noto Color Emoji';
+  box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.08),0 3px 6px -4px rgba(0, 0, 0, 0.12),0 9px 28px 8px rgba(0, 0, 0, 0.05);
+  .el-message__content{
+    color: $messageFontColor;
+    word-break: break-all;
+    line-height: 1.5714285714285714;
+  }
+  .el-message__icon{
+    font-size: 16px;
+    line-height: 1.5714285714285714;
+    margin-right: 8px;
+    display: inline-flex;
+  }
+}
+
 // 页面容器
 .page-container{
   background-size: cover !important;
