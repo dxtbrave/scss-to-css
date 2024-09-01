@@ -52,7 +52,7 @@ scssFiles.forEach((scssFile) => {
   const cssWithCharset = `@charset "UTF-8";\n${result.css.toString()}`;
 
   // 写入结果到输出文件
-  fs.writeFile(cssFile, result.css, (err) => {
+  fs.writeFile(cssFile, cssWithCharset, (err) => {
     if (err) {
       console.error(`Error writing to CSS file: ${cssFile}`, err);
       return;

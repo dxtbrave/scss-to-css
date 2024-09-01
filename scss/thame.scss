@@ -1,3 +1,11 @@
+$messageFontColor: rgba(0, 0, 0, 0.88);
+$defaultFontColor: rgb(24, 31, 56);
+$buttonDefaultColor: rgb(16,16,16);
+$buttonDefaultHoverColor: #409eff;
+$buttonPrimaryBgColor: rgb(34,116,255);
+$buttonPrimaryHoverBgColor: rgb(60,140,255);
+$tableHeaderBgColor: #FAFAFA;
+
 .tw-ai-delivery{
   &.tw-m-nav-bar {
     box-shadow: 0 8px 12px #ebedf0;
@@ -12,7 +20,6 @@ html{
 }
 
 // Element Message样式
-$messageFontColor: rgba(0, 0, 0, 0.88);
 .el-message{
   min-width: auto !important;
   background: #fff !important;
@@ -34,6 +41,81 @@ $messageFontColor: rgba(0, 0, 0, 0.88);
     display: inline-flex;
   }
 }
+
+// Element Table样式
+.el-table{
+  .el-table__body-wrapper{
+    // 不存在横向滚动条
+    &.is-scrolling-none{
+      &~.el-table__fixed-right{
+        height: 100% !important;
+      }
+    }
+    &~.el-table__fixed-right{
+      height: calc(100% - 4px) !important;
+    }
+  }
+  // 表头
+  .el-table__header-wrapper{
+    thead{
+      color: $defaultFontColor;
+    }
+  }
+  th{
+    &.el-table__cell{
+      background-color: $tableHeaderBgColor;
+    }
+  }
+  // 固定在右侧的表头
+  .el-table__fixed-right{
+    thead{
+      color: $defaultFontColor;
+    }
+  }
+  // 表体
+  .el-table__body-wrapper{
+    .el-table__cell{
+    }
+  }
+  // 固定时的表体
+  .el-table__fixed-body-wrapper{
+    .el-table__cell{
+    }
+  }
+}
+
+// Element 表单项样式
+.tw-form-item{
+  .tw-form-item-label{
+    color: $defaultFontColor;
+  }
+}
+
+// Element 按钮样式
+.tw-button{
+  .el-button{
+    // 中尺寸
+    &.el-button--small{
+      font-size: 14px;
+    }
+    transition: .2s all linear;
+    // 默认
+    &.el-button--default{
+      color: $buttonDefaultColor;
+      &:hover,&:focus{
+        color: $buttonDefaultHoverColor;
+      }
+    }
+    // 主要
+    &.el-button--primary{
+      background-color: $buttonPrimaryBgColor;
+      &:hover,&:focus{
+        background-color: $buttonPrimaryHoverBgColor;
+      }
+    }
+  }
+}
+
 
 // 页面容器
 .page-container{
