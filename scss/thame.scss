@@ -44,6 +44,7 @@ html{
 
 // Element Table样式
 .el-table{
+  color: $defaultFontColor;
   .el-table__body-wrapper{
     // 不存在横向滚动条
     &.is-scrolling-none{
@@ -97,6 +98,7 @@ html{
     // 中尺寸
     &.el-button--small{
       font-size: 14px;
+      padding: 8px 15px;
     }
     transition: .2s all linear;
     // 默认
